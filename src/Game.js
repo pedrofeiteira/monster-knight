@@ -148,6 +148,8 @@ export function observe(o) {
     }
 
     observer = o;
+
+    startGame();
     emitChange();
 }
 

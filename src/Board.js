@@ -29,7 +29,8 @@ class Board extends Component {
         const y = Math.floor(i / 8);
         return (
           <div key={i}
-               style={{ width: '12.5%', height: '12.5%' }}>
+               style={{ width: '12.5%', height: '12.5%' }}
+               onClick={() => this.handleSquareClick(x, y)}>
             <BoardSquare x={x}
                          y={y}>
               {this.renderPiece(x, y)}
